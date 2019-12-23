@@ -131,5 +131,12 @@ namespace PassGen
         {
             Application.Current.Shutdown();
         }
+
+
+        private void authorLabel_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            passResult.Text = "";
+            passResult.Text = "Application fully made by Michał Zaorski\nhttps://github.com/35T4N0R";
+        }
     }
 }

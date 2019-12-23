@@ -51,6 +51,6 @@
             <TextBox IsReadOnly="True" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto" Name="passResult" Height="375" Width="370" FontSize="18"></TextBox>
         </Border>
         
-        <Label Opacity="0.5" Content="Made by Michał Zaorski" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="Gray" FontSize="7"></Label>
+        <Label Opacity="0.5" Content="Made by Michał Zaorski" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="Gray" FontSize="7" Name="authorLabel" MouseDown="authorLabel_MouseDown"></Label>
     </Grid>
 </Window>
