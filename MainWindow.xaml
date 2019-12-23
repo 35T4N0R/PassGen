@@ -6,11 +6,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PassGen"
         mc:Ignorable="d"
-        Title="Generator Haseł"  Height="450" Width="800" Icon="padlock.ico"  Topmost="False" ResizeMode="CanMinimize" ShowInTaskbar="True" Background="#FFFFF3BD" WindowStartupLocation="CenterScreen" MouseDown="Window_MouseDown">
+        Title="Password Generator"  Height="450" Width="800" Icon="padlock.ico"  Topmost="False" ResizeMode="CanMinimize" ShowInTaskbar="True" Background="#FFFFF3BD" WindowStartupLocation="CenterScreen" MouseDown="Window_MouseDown">
     <Grid>
-        <Label Name="Title" Content="Generator Haseł" VerticalAlignment="Top" FontSize="24" Foreground="Purple"  HorizontalAlignment="Left" Margin="50 50 0 0"></Label>
+        <Label Name="Title" Content="Password Generator" VerticalAlignment="Top" FontSize="24" Foreground="Purple"  HorizontalAlignment="Left" Margin="50 50 0 0"></Label>
 
-        <Label Name ="LengthLabel" Content="Długość hasła" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50 0 0 125"></Label>
+        <Label Name ="LengthLabel" Content="Password length" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50 0 0 125"></Label>
         <ComboBox x:Name="passLength" HorizontalAlignment="Left"  VerticalAlignment="Center" Width="128" SelectedIndex="0" FontSize="14" Margin="200 0 0 125">
             <ComboBoxItem Content="8"/>
             <ComboBoxItem Content="9"/>
@@ -27,25 +27,25 @@
             <ComboBoxItem Content="20"/>
         </ComboBox>
 
-        <Label Name ="upperCaseLabel" Content="Wielkie litery" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50 70 0 125"></Label>
+        <Label Name ="upperCaseLabel" Content="Uppercase" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50 70 0 125"></Label>
         <CheckBox Name="upperCaseCheckBox" IsChecked="True" VerticalAlignment="Center" HorizontalAlignment="Left"  Margin="200 70 0 125" Checked="upperCaseCheckBox_Checked" Unchecked="upperCaseCheckBox_Unchecked"></CheckBox>
         <Label Content="( np.: ABCDEFGHJK )" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="230 70 0 125"></Label>
 
-        <Label Name ="symbolLabel" Content="Symbole" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50 140 0 125"></Label>
+        <Label Name ="symbolLabel" Content="Symbols" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50 140 0 125"></Label>
         <CheckBox x:Name="symbolCheckBox" IsChecked="True" VerticalAlignment="Center" HorizontalAlignment="Left"  Margin="200 140 0 125" Unchecked="symbolCheckBox_Unchecked" Checked="symbolCheckBox_Checked"></CheckBox>
         <Label Content="( np.: !@#$%^* )" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left"  Margin="230 140 0 125"></Label>
 
-        <Label Name ="numberLabel" Content="Cyfry" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50 210 0 125"></Label>
+        <Label Name ="numberLabel" Content="Numbers" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50 210 0 125"></Label>
         <CheckBox x:Name="numberCheckBox" IsChecked="True" VerticalAlignment="Center" HorizontalAlignment="Left"  Margin="200 210 0 125" Checked="numberCheckBox_Checked" Unchecked="numberCheckBox_Unchecked"></CheckBox>
         <Label Content="( np.: 12345 )" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left"  Margin="230 210 0 125" ></Label>
 
-        <Label Name ="sameLabel" Content="Podobne" FontSize="18" VerticalAlignment="Bottom"  HorizontalAlignment="Left" Margin="50 0 0 131"></Label>
+        <Label Name ="sameLabel" Content="Similar" FontSize="18" VerticalAlignment="Bottom"  HorizontalAlignment="Left" Margin="50 0 0 131"></Label>
         <CheckBox x:Name="sameCheckBox" VerticalAlignment="Bottom"  HorizontalAlignment="Left"  Margin="200 0 0 141" Unchecked="sameCheckBox_Unchecked" Checked="sameCheckBox_Checked"></CheckBox>
         <Label Content="( i l I 0 O 1 )" FontSize="18" VerticalAlignment="Bottom"  HorizontalAlignment="Left"  Margin="230 0 00 131" ></Label>
 
 
-        <Button x:Name="Generate" Width="80" Height="30" FontSize="18" HorizontalAlignment="Left"  VerticalAlignment="Bottom" Margin="100 0 0 70"  Content="Generuj" Click="Generate_Click"></Button>
-        <Button Name="Close" Content="Zamknij" Width="80" Height="30" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="200 0 0 70" Click="Close_Click"></Button>
+        <Button x:Name="Generate" Width="80" Height="30" FontSize="18" HorizontalAlignment="Left"  VerticalAlignment="Bottom" Margin="100 0 0 70"  Content="Generate" Click="Generate_Click"></Button>
+        <Button Name="Close" Content="Close" Width="80" Height="30" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="200 0 0 70" Click="Close_Click"></Button>
         
         <Border BorderBrush="Black" BorderThickness="1" Height="370" Width="370" Margin="400 10 10 10">
             <TextBox IsReadOnly="True" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto" Name="passResult" Height="375" Width="370" FontSize="18"></TextBox>
